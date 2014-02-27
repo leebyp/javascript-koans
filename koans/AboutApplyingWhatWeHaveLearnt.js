@@ -265,6 +265,9 @@ describe("About Applying What We Have Learnt", function() {
 
     function nthPrime(n){
       var primeNum = 0;
+      if (n === 1){
+        return 2;
+      }
       for (var i=2; i<Math.pow(n,2); i++){
         if (isPrime(i)){
           primeNum += 1;
